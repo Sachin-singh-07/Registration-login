@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="login_style.css" />
+  <link rel="icon" href="https://png.pngtree.com/png-vector/20211023/ourmid/pngtree-salon-logo-png-image_4004444.png" />
+  <title>Login & Sign Up </title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="" class="sign-in-form">
+          <h2 class="title">Login</h2>
+          <div class="input-field">
+            <em class="fa fa-user"></em>
+            <input autocomplete="off" type="text" placeholder="USERNAME" class="fld" id="un" />
+          </div>
+          <div class="input-field">
+            <em class="fa fa-lock"></em>
+            <input type="password" placeholder="Password" class="fld" id="pass" />
+          </div>
+          <input type="button" value="LOGIN" class="btn solid" onclick="login()" /> <br>
+          <!-- <input type="reset" value="CANCEL" class="btn solid" /> -->
+
+          <!-- <p class="social-text"> Social Media Platform</p>  --><br> <br>
+
+          <br>
+          <div class="social-media">
+            <a href="https://www.facebook.com/" class="social-icon">
+              <em class="fab fa-facebook-f"></em></a>
+
+            <a href="https://www.Twitter.com/" class="social-icon">
+              <em class="fab fa-twitter"></em></a>
+
+            <a href="https://www.Google.com/" class="social-icon"><em class="fab fa-google"></em></a>
+
+            <a href="https://www.linkedin.com/" class="social-icon"><em class="fab fa-linkedin-in"></em></a>
+          </div>
+        </form>
+
+        <form action="" class="sign-up-form">
+          <h2 class="title">Registration</h2>
+          <div class="input-field">
+            <em class="fa fa-user"></em>
+            <input type="text" placeholder="username" />
+          </div>
+          <div class="input-field">
+            <em class="fa fa-envelope"></em>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-field">
+            <em class="fa fa-lock"></em>
+            <input type="password" placeholder="password" />
+          </div>
+          <input type="submit" value="Registrar" class="btn solid" />
+
+          <!-- <p class="social-text">Social Media Platform</p> -->
+
+          <div class="social-media">
+            <a href="https://www.facebook.com/" class="social-icon">
+              <em class="fab fa-facebook-f"></em></a>
+
+            <a href="https://www.Twitter.com/" class="social-icon">
+              <em class="fab fa-twitter"></em></a>
+
+            <a href="https://www.Google.com/" class="social-icon"><em class="fab fa-google"></em></a>
+
+            <a href="https://www.linkedin.com/" class="social-icon"><em class="fab fa-linkedin-in"></em></a>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>Swipe </h3>
+          <p>
+            To Registration
+          </p>
+          <button class="btn transparent" id="sign-up-btn">Registration</button>
+        </div>
+
+        <img src="https://www.freepnglogos.com/uploads/mario-png/super-mario-party-for-the-nintendo-switch-system-14.png" class="image" alt="sachin" />
+        
+      </div>
+
+      <div class="panel right-panel">
+        <div class="content">
+          <h3> Swipe </h3>
+          <p>
+            To Login
+          </p>
+          <button class="btn transparent" id="sign-in-btn">Login</button>
+        </div>
+        <img src="https://pngimg.com/d/mario_PNG125.png" class="image" alt="sachin" />
+      </div>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+
+</html>

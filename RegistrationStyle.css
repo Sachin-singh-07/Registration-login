@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.abc {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-image: url("https://getwallpapers.com/wallpaper/full/8/e/e/273139.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.create-account {
+    margin-top: 90px;
+}
+
+.fld {
+    width: 80%;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    color: black;
+    padding-left: 20px;
+}
+
+.btn {
+    width: 60px;
+    margin-right: 70px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    border-radius: 30px;
+    height: 30px;
+    border: 2px solid wheat;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+/* new  */
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+section .color {
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .color:nth-child(1) {
+    top: -350px;
+    width: 700px;
+    height: 700px;
+    background: #d697b7;
+}
+
+section .color:nth-child(2) {
+    bottom: -100px;
+    left: 300px;
+    width: 600px;
+    height: 600px;
+    background: #6796b3;
+}
+
+section .color:nth-child(3) {
+    bottom: 50px;
+    right: 400px;
+    width: 400px;
+    height: 400px;
+    background: #43aec6;
+}
+
+.box {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(231, 233, 235, 0.1);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(155, 212, 57, 0.8);
+    border-bottom: 2px solid rgba(162, 37, 37, 0.5);
+    border-right: 2px solid rgba(69, 44, 184, 0.5);
+}
+
+
+.form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form h2 {
+    position: relative;
+    color: green;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.form h2::before {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 43px;
+    background: wheat;
+
+
+}
+
+.form .inputbox {
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.forget {
+    margin-top: 5px;
+    color: #fff;
+
+}
+
+
+.box .square {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s*var(--i));
+
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+.box .square:nth-child(1) {
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+
+}
+
+.box .square:nth-child(2) {
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+
+}
+
+.box .square:nth-child(3) {
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+
+}
+
+.box .square:nth-child(4) {
+    bottom: -80px;
+    left: -60px;
+    width: 50px;
+    height: 50px;
+
+
+}
+
+.box .square:nth-child(5) {
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+
+
+}

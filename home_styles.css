@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.navbar  {
+  position: fixed;
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding:20px;
+  color: black;
+  background:#56a7b8;
+  border-bottom: 1px solid red;
+  font-family: "JetBrains Mono", monospace;
+  
+
+}
+
+.logo,
+.links {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.logo {
+  gap: 22px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.logo h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-left: 20px;
+  cursor:pointer;
+  
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+a.join-link {
+  display: grid;
+  place-items: center;
+  height: 70px;
+  padding: 12px;
+  border-radius: 6px;
+  color: gainsboro;
+  background: #68ead0;
+}
+
+.search {
+  flex: 1 1 auto;
+  position: relative;
+  margin-left: 10px;
+}
+
+.search input {
+  background: #f2f2f2;
+  border-radius: 6px;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  padding-left: 34px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.search input::placeholder {
+  color: rebeccapurple;
+}
+
+
+
+@media (width >=320px) {
+  .burger {
+    display: none;
+  }
+}
+
+.dropdown  {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown>a {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 30x;
+}
+
+.dropdown>a>img {
+  width: 20px;
+}
+
+.dropdown:hover .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu {
+  position: absolute;
+  top: 80px;
+  right: -20px;
+  display: grid;
+  width: 180px;
+  padding: 8px ;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 40px 40px rgb(0 0 0 / 6%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+}
+
+
+.menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu>a {
+  font-size: 15px;
+  padding: 12px;
+  height: auto;
+}
+
+.menu>a:hover {
+  background: #f5f5f5;
+}
