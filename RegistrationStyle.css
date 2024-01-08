@@ -45,18 +45,30 @@
     padding-left: 20px;
 }
 
+.lab{
+    color: red;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
 .btn {
     width: 60px;
+    /* height: 60px; */
     margin-right: 70px;
     margin-top: 30px;
     border: none;
     outline: none;
-    background-color: gainsboro;
+    background-color: wheat;
+    color: red;
     border-radius: 30px;
     height: 30px;
-    border: 2px solid wheat;
+    border: 1px solid rebeccapurple;
     margin-left: 20px;
     cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+    /* flex-direction:column; */
 }
 
 

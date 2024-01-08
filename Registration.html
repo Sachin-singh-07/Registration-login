@@ -33,14 +33,22 @@
                             <h2>REGISTRATION FORM</h2>
 
                             <form autocomplete="off">
-                                <input type="text" placeholder="USERNAME" class="fld inputbox" id="un">
-                                <input type="text" placeholder="PASSWORD" class="fld inputbox" id="pwd1">
+                                <label class="lab"> Username<input type="text" placeholder="" class="fld inputbox" id="un"></label>
+
+                                <label class="lab"> Password <input type="text" placeholder="" class="fld inputbox"
+                                        id="pwd1"></label>
 
 
-                                <input type="text" placeholder="CONFERM PASSWORD" class="fld inputbox" id="pwd2">
 
-                                <input type="text" placeholder="NUMBER" class="fld inputbox" id="phone">
-                                <input type="email" placeholder="E-mail" class="fld inputbox" id="eml"> <br>
+                                <label class="lab">confirm Password <input type="text" placeholder=""
+                                        class="fld inputbox" id="pwd2"></label>
+
+                                <label class="lab">Contact <input type="text" placeholder="" class="fld inputbox"
+                                        id="phone"></label>
+
+
+                                <label class="lab">E-mail <input type="email" placeholder="" class="fld inputbox" id="eml">
+                                </label>
 
                                 <input type="button" value="CREATE" class="btn" onclick="registration()">
                                 <input type="reset" value="CANCEL" class="btn">

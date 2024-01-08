@@ -24,23 +24,48 @@ function dataProcessing() {
     if (check == null) {
         storeData(formData);
     }
+    else {
+        document.getElementById("tablebody").rows[check].cells[1].innerHTML = formData.username;
+        document.getElementById("tablebody").rows[check].cells[2].innerHTML = formData.email;
+        document.getElementById("tablebody").rows[check].cells[3].innerHTML = formData.phone;
+        document.getElementById("tablebody").rows[check].cells[4].innerHTML = formData.education;
+        document.getElementById("tablebody").rows[check].cells[5].innerHTML = formData.passout;
+
+    }
+
+
 }
 
 // fetching data from user
 
+// function fetchData() {
+
+//     let formData = {};
+
+//     formData.username = username.value;
+//     formData.phone = phone.value;
+//     formData.education = education.value;
+//     formData.branch = branch.value;
+//     formData.college = college.value;
+//     formData.passout = passout.value;
+//     formData.email = email.value;
+//     return formData;
+// }
 function fetchData() {
 
-    let formData = {};
+    let formData = {
 
-    formData.username = username.value;
-    formData.phone = phone.value;
-    formData.education = education.value;
-    formData.branch = branch.value;
-    formData.college = college.value;
-    formData.passout = passout.value;
-    formData.email = email.value;
+        username: username.value,
+        phone: phone.value,
+        education: education.value,
+        branch: branch.value,
+        college: college.value,
+        passout: passout.value,
+        email: email.value
+    }
     return formData;
 }
+
 
 
 // storing data into table
@@ -96,6 +121,28 @@ function editData(btn) {
     education.value = editRow.cells[4].innerHTML;
     passout.value = editRow.cells[5].innerHTML;
 
-    check = "newdata";
+
+
+
+    // console.log(btn.parentElement.parentElement);
+
+
+
+
+
+
+
+    check = btn.parentElement.parentElement.rowIndex - 1;
+
+}
+function deleteData(btn) {
+    // console.log(btn.parentElement.parentElement)
+    // console.log(btn.parentElement.parentElement.parentElement)
+    // console.log(btn.parentElement.parentElement.rowIndex)
+
+    if (confirm("Are you sure?")) {
+        document.getElementById(
+            "tablebody").deleteRow(btn.parentElement.parentElement.rowIndex - 1);
+    }
 
 }
